@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Craftsvilla]" guice-stage="DEVELOPMENT">
+  <parameter name="platform" value="Chrome"/>
+  <parameter name="browserType" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.craftsvilla.generic.CaptureScreenShot"/>
+  </listeners>
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="com.craftsvilla.testscripts.GoogleSearch">
+        <methods>
+          <include name="googleSeach" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.craftsvilla.testscripts.GoogleSearch -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Craftsvilla] -->
